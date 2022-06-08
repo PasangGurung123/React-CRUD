@@ -1,14 +1,13 @@
-
 import React from 'react'
 
-const Contacts = () => {
+const Services = () => {
   return (
     <div className='container'>
     <div className='py-4'>
-        <h1>Contacts page</h1>
+        <h1>Services page</h1>
     </div>
 </div>
   )
 }
 
-export default Contacts
+export default Services
