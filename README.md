@@ -9,3 +9,6 @@ made some changes in the pasang branch and want it merge through terminal in mai
 some more changes in read me in pasang branch 
 
 help read me.md file changes
+
+change with using set upstream in push
+
