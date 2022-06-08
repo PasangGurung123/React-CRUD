@@ -12,3 +12,7 @@ help read me.md file changes
 
 change with using set upstream in push
 
+
+another change with set upstream but this time with master
+
+
