@@ -2,7 +2,10 @@ import React, {useState, useEffect} from 'react'
 import axios from 'axios'
 import { Link  } from 'react-router-dom'
 
-const Home = () => {
+// import ColumnResizer from "react-column-resizer";
+
+
+const DemoHome = () => {
     const[users, setUser] = useState([]);
 
     useEffect(() => {
@@ -26,11 +29,17 @@ const Home = () => {
               <table className="table border shadow">
           <thead className="thead-dark">
             <tr>
-              <th scope="col">#</th>
+              <th scope="col">S.No</th>
+              {/* <ColumnResizer className="columnResizer" /> */}
               <th scope="col">Name</th>
+              {/* <ColumnResizer className="columnResizer" /> */}
               <th scope="col">User Name</th>
+              {/* <ColumnResizer className="columnResizer" /> */}
               <th scope="col">Email</th>
-              <th>Action</th>
+              {/* <ColumnResizer className="columnResizer" /> */}
+              <th>Action</th> 
+              {/* <ColumnResizer className="columnResizer" /> */}
+              
             </tr>
           </thead>
           <tbody>
@@ -41,8 +50,8 @@ const Home = () => {
                 <td>{user.username}</td>
                 <td>{user.email}</td>
                 <td> 
-                <Link type="button" className="btn btn-primary mr-2" to={`/users/${user.id}`}>View</Link>
-                <Link type="button" className="btn btn-success mr-2" to={`/users/edit/${user.id}`}>Edit</Link>
+                <Link type="button" className="btn btn-primary" to={`/users/${user.id}`}>View</Link>
+                <Link type="button" className="btn btn-success" to={`/users/edit/${user.id}`}>Edit</Link>
                 <Link type="button" className="btn btn-danger"
                 onClick={() => deleteUser(user.id)}
                 to="#">Delete</Link>
@@ -61,4 +70,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default DemoHome
