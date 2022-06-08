@@ -17,3 +17,7 @@ another change with set upstream but this time with master
 
 changes in the master file noww
 
+
+changes in the 21st file but now will do merge through terminal
+
+
